@@ -1,0 +1,24 @@
+{
+  "name": "mitm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "getmac": "^1.0.7",
+    "ip": "^1.1.0",
+    "through2": "^2.0.0",
+    "pcap": "/mranney/node_pcap.git",
+    "q": "^1.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mitm",
+    "arp",
+    "poision"
+  ],
+  "author": "Soda",
+  "license": "ISC"
+}
