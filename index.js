@@ -1,7 +1,15 @@
-var arp = require('./lib/arp.js');
+var ArpPkg = require('./lib/arp.js');
 
-arp.getInstance();//.setSrcIp('192.168.1.1');
-//arp.getInstance().setDstMac('CC:29:F5:CF:2C:F0');
-//arp.getInstance().setDstIp('192.168.1.102');
+var options = {
+	dst_ip: '192.168.1.104',
+	dst_mac: '5c:e0:c5:75:31:ef',
+	eh_dst: '5c:e0:c5:75:31:ef',
+	src_ip: '192.168.1.103'
+};
 
-//arp.getInstance().poision();
+var arp = new ArpPkg(options);
+arp.send(a);
+
+function a(){
+	process.exit(1);
+}
